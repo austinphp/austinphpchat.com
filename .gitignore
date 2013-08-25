@@ -1,0 +1,9 @@
+*.swp
+__TwigTemplate*
+/build/pear/*
+/tests/code-coverage
+.settings
+.buildpath
+.project
+*.phar
+/vendor/

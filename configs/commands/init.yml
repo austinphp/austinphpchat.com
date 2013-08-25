@@ -1,0 +1,40 @@
+# phr init
+---
+command:
+    name: &name init
+    aliases: [initialize]
+    description: &desc Initialize Phrozn project
+    options:
+        verbose:
+           short_name: -v
+           long_name: --verbose
+           doc_name: -v [--verbose]
+           action: StoreTrue
+           description: Turn on verbose output
+    arguments:
+        path:
+            help_name: path
+            description: Destination directory
+            optional: true
+
+# callback
+callback: [Init, execute]
+
+# documentation
+docs:
+    name: initialize (init)
+    summary: *desc
+    description: |
+        This command creates empty phrozn site.
+
+        If output PATH not provided, current directory is assumed.
+    usage: %bphrozn%n %ginit%n [PATH]
+    examples: |
+        To create project in current directory:
+        %bphrozn%n %ginit%n
+
+        To create project in specified directory PATH:
+        %bphrozn%n %ginit%n PATH
+
+        To create project in current directory (path specified explicitly):
+        %bphrozn%n %ginit%n .
