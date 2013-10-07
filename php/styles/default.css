@@ -25,4 +25,4 @@ body { padding-top:40px; }
   border-left:1px solid #eeeeee;
 }
 .topbar .btn { border:0; }
-.content { text-align:center; }
+.content { padding-left:300px; }
