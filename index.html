@@ -3,15 +3,26 @@
 <head>
     <title>Austin PHP - IRC Chat</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('open-chat').addEventListener('click', function () {
+                window.open('http://webchat.freenode.net/?channels=%23austinphp');
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
     <style type="text/css">
-
-        html, body {
-            background-color: #eeeeee;
+        .content {
+            position: relative;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .content {
-            width: 70%;
+        #open-chat {
+            position: relative;
             margin-left: auto;
             margin-right: auto;
         }
@@ -25,8 +36,11 @@
     <h1>#AustinPHP</h1>
 
     <p>Join the Austin PHP community on the Freenode IRC
-        network. Use an IRC client from the list below or try the <a
-                href="http://webchat.freenode.net/?channels=%23austinphp" target="_blank">Freenode web chat</a>.</p>
+        network. Use an IRC client or try the web client by clicking on the button below.</p>
+
+    <button id="open-chat" type="button" class="btn btn-lg btn-success">Launch Web Chat</button>
+
+    <h2>About Austin PHP Chat</h2>
 
     <p>
         We are a collection of people from various backgrounds. A lot of us attend the <a
