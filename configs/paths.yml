@@ -1,3 +1,0 @@
-library: @PEAR-DIR@Phrozn/
-configs: @DATA-DIR@configs/
-skeleton: @DATA-DIR@skeleton/
