@@ -1,47 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Austin PHP - IRC Chat</title>
+    <title>Austin PHP Chat</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="application/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('open-chat').addEventListener('click', function () {
-                window.open('http://webchat.freenode.net/?channels=%23austinphp');
-            });
-        });
-    </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
     <style type="text/css">
+        body {
+            margin-top: 3%;
+        }
         .content {
             position: relative;
             width: 70%;
             margin-left: auto;
             margin-right: auto;
         }
-
-        #open-chat {
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
     </style>
 </head>
 <body>
 
 <div class="content">
 
-    <h1>#AustinPHP</h1>
+    <h1>Austin PHP Chat</h1>
 
-    <p>Join the Austin PHP community on the Freenode IRC
-        network. Use an IRC client or try the web client by clicking on the button below.</p>
-    <p>We also have a Slack group that are welcome to join. You can signup for
-        austinphp slack by sending us an email:
-        </br>
-        <a href="mailto:austinphp-slack-admin@llbbl.com">austinphp-slack-admin@llbbl.com
-        </a>
+    <p>Join the Austin PHP community on Slack by sending an email request to:
+        <a href="mailto:austinphp-slack-admin@llbbl.com">austinphp-slack-admin@llbbl.com</a>
     </p>
 
 
@@ -54,49 +37,6 @@
         write PHP for fun or a living, or use this as a resource for tips, help and networking. We just enjoy talking
         about code in general.
     </p>
-
-    <h2>Connection details</h2>
-
-    <strong>Server:</strong> chat.freenode.net<br/>
-    <strong>Port:</strong> 6665<br/>
-    <strong>Channel:</strong> #austinphp
-
-    <h3>IRC clients</h3>
-
-    <ul>
-        <li>Cross-platform</li>
-        <ul>
-            <li><a href="https://addons.mozilla.org/en-US/firefox/addon/chatzilla/" target="_blank">ChatZilla</a></li>
-        </ul>
-    </ul>
-
-    <ul>
-        <li>Windows</li>
-        <ul>
-            <li><a href="http://www.mirc.com/" target="_blank">mIRC</a></li>
-            <li><a href="http://xchat.org/" target="_blank">X-Chat</a></li>
-            <li><a href="http://www.hydrairc.com/" target="_blank">HydraIRC</a></li>
-        </ul>
-    </ul>
-
-    <ul>
-        <li>Mac</li>
-        <ul>
-            <li><a href="http://limechat.net/mac/" target="_blank">LimeChat</a></li>
-            <li><a href="http://colloquy.info/" target="_blank">Colloquy</a></li>
-            <li><a href="http://www.codeux.com/textual/" target="_blank">Textual</a></li>
-        </ul>
-    </ul>
-
-    <ul>
-        <li>Unix / Linux</li>
-        <ul>
-            <li><a href="http://xchat.org/" target="_blank">X-Chat</a></li>
-            <li><a href="http://quassel-irc.org/" target="_blank">Quassel</a></li>
-        </ul>
-    </ul>
-    
-    <button id="open-chat" type="button" class="btn btn-lg btn-success">Launch Web Chat</button>
 
 </div>
 
