@@ -9,11 +9,16 @@
         body {
             margin-top: 3%;
         }
+
         .content {
             position: relative;
             width: 70%;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #email {
+            width:255px;
         }
     </style>
 </head>
@@ -23,9 +28,14 @@
 
     <h1>Austin PHP Chat</h1>
 
-    <p>Join the Austin PHP community on Slack by sending an email request to:
-        <a href="mailto:austinphp-slack-admin@llbbl.com">austinphp-slack-admin@llbbl.com</a>
-    </p>
+    <p>Join the Austin PHP community on Slack by filling out the form below to get an invite</p>
+
+    <form class="form-inline" action="https://slofile.com/slack/austinphp/invite" accept-charset="UTF-8" method="post">
+        <input name="utf8" type="hidden" value="✓">
+        <input type="hidden" name="authenticity_token" value="PGADvHA0d4kQUpnbKa7ON8ceG4IbYUXoXrbTU3yCdDTj+lqJdRV5mXHWr0fMWtHmQJ09L8S3PhBFYHYk3wiv5g==">
+        <input type="email" name="email" id="email" value="" placeholder="you@youremail.com" class="form-control">
+        <input type="submit" name="commit" value="Get Invite" class="btn btn-primary btn-invite">
+    </form>
 
 
     <h2>About Austin PHP Chat</h2>
